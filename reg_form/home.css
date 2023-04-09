@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: aliceblue;
+}
+.container .navbar
+{
+    display: flex;
+    height: 3rem;
+    background-color: whitesmoke;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.navbar .total
+{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.total a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.navbar span
+{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 28px;
+}
+.profile i
+{
+    font-size: 40px;
+    cursor: pointer;
+}
+.profile .prof-show
+{
+    overflow-y: scroll;
+    width: 250px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    right: 30px;
+    top: 48px;
+    border-radius: 5px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    display: none;
+}
+.prof-show::-webkit-scrollbar
+{
+    display: none;
+}
+.container .shopcont
+{
+    background-color: lightblue;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    gap: 10px;
+}
+
+
+.shopcont .open
+{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.open .bottom
+{
+    height: 50%;
+    width: 300px;
+    background-color: dodgerblue;
+}
+.open .topcont
+{
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 10px 10px 0 0;
+    transition: 0.5s ease-out;
+}
+.topcont .top
+{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+.topcont:hover{
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+.open .bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.bottom .price
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+.bottom .name
+{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.top .img
+{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px 10px 0 0;
+}
+.img img
+{
+    border-radius: 10px 10px 0 0;
+}
+.top .buy
+{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.buy:hover{
+    background-color: lavender;
+}
+
+
+/* Change the width and color of the vertical scrollbar */
+::-webkit-scrollbar {
+    width: 2px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Change the color of the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #000000;
+  }
+  
+  /* Change the color of the scrollbar on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555555;
+  }
+  

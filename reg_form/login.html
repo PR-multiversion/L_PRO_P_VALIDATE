@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer type="module" src="eye.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="email" id="loginemail" placeholder="Email" reqiured>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="loginpw" class="password" placeholder="Password" reqiured>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showpw"></i>  
+                    </div>
+                    <div class="checkbox-text">
+                        <div class="checkbox-cont">
+                        <input type="checkbox">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" id="login">LOGIN</button>
+                </form>
+                <div class="signup-reg">
+                    Not a member ? <a href="#" class="signup-text">Signup</a>
+                </div>
+            </div>
+
+            <!--Registration-->
+            <div class="form signup">
+                <span class="title">Signup</span>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" id="s-name" placeholder="Name" reqiured>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="s-email" placeholder="Email" reqiured>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="s-pw" class="password" placeholder="Password" reqiured>
+                        <i class="uil uil-lock icon"></i>  
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="s-cpw" class="password" placeholder="Confirm Password" reqiured>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showpw"></i>  
+                    </div>
+                    <div class="checkbox-text">
+                        <div class="checkbox-cont">
+                        <input type="checkbox">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" id="signup">SIGNUP</button>
+                </form>
+                <div class="signup-reg">
+                    Do you have account ? <a href="#" class="login-text">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
