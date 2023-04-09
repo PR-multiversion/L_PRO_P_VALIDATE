@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    height: 100vh;
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.container .open
+{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.open .bottom
+{
+    height: 50%;
+    width: 300px;
+    background-color: rgb(204, 36, 92);
+}
+</style>
+<body>
+    <div class="container">
+        <div class="head">Cascading Style Sheet</div>
+        <div class="open">
+            <div class="topcont">
+                <div class="top" style="border-radius: 10px 10px 0 0;"></div>
+            </div>
+            <div class="bottom" style="color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;font-size: 20px;">INTERNET</div>
+        </div>
+        <div class="open">
+            <div class="topcont">
+                <div class="top" style="border-radius: 10px 10px 0 0;"></div>
+            </div>
+            <div class="bottom" style="color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;font-size: 20px;">PROGRAMMING</div>
+        </div>
+    </div>
+</body>
+</html>
